@@ -86,5 +86,5 @@ class CookieUtil {
     static void storeCookies(HttpConnection.Request req, URL url, Map<String, List<String>> resHeaders) throws IOException {
         req.cookieManager().put(CookieUtil.asUri(url), resHeaders); // stores cookies for session
 
-    }
+    
 }

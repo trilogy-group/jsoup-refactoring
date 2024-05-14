@@ -12,7 +12,7 @@ public class ParseErrorList extends ArrayList<ParseError>{
     private final int initialCapacity;
     private final int maxSize;
     
-    ParseErrorList(int initialCapacity, int maxSize) {
+    ParseErrorList(int initialCapacity, int maxSize) 
         super(initialCapacity);
         this.initialCapacity = initialCapacity;
         this.maxSize = maxSize;

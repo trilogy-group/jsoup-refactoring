@@ -10,7 +10,7 @@ enum TokeniserState {
         // in data state, gather characters until a character reference or tag is found
         @Override void read(Tokeniser t, CharacterReader r) {
             switch (r.current()) {
-                case '&':
+                case '&'
                     t.advanceTransition(CharacterReferenceInData);
                     break;
                 case '<':

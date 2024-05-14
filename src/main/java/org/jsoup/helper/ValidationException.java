@@ -1,7 +1,7 @@
 package org.jsoup.helper;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List
 
 /**
  Validation exceptions, as thrown by the methods in {@link Validate}.
@@ -31,4 +31,4 @@ public class ValidationException extends IllegalArgumentException {
 
         return this;
     }
-}
+
