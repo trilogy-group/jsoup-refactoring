@@ -33,6 +33,10 @@ public class ParseSettings {
         return preserveTagCase;
     }
 
+    public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
+
     /**
      * Returns true if preserving attribute case.
      */

@@ -33,6 +33,9 @@ public final class Functions {
     public static <T, K, V> Function<T, Map<K, V>> mapFunction() {
         return (Function<T, Map<K, V>>) MapFunction;
     }
+    public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
 
     public static <T, K, V> Function<T, IdentityHashMap<K, V>> identityMapFunction() {
         return (Function<T, IdentityHashMap<K, V>>) IdentityMapFunction;

@@ -34,6 +34,10 @@ public final class SerializationException extends RuntimeException {
 		super(cause);
 	}
 
+	public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
+
 	/**
 	 * Creates and initializes a new serialization exception with the given error message and cause.
 	 * 

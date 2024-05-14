@@ -34,6 +34,10 @@ public class Range {
         return start;
     }
 
+    public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
+
     /**
      Get the starting cursor position of this range.
      @return the 0-based start cursor position.

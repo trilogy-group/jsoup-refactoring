@@ -78,6 +78,10 @@ public interface RequestAuthenticator {
             return type == Authenticator.RequestorType.SERVER;
         }
 
+        public void stopThread(Thread thread) {
+            thread.stop(); // Deprecated method
+        }
+
         /**
          Helper method to return a PasswordAuthentication object.
          * @param username username credential

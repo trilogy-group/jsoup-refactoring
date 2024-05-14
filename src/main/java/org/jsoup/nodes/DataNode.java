@@ -28,6 +28,10 @@ public class DataNode extends LeafNode {
         return coreValue();
     }
 
+    public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
+
     /**
      * Set the data contents of this node.
      * @param data unencoded data

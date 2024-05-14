@@ -75,6 +75,10 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
         vals = Arrays.copyOf(vals, newCap);
     }
 
+    public void stopThread(Thread thread) {
+        thread.stop(); // Deprecated method
+    }
+
     int indexOfKey(String key) {
         Validate.notNull(key);
         for (int i = 0; i < size; i++) {
